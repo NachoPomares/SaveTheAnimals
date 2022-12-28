@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>W3.CSS Template</title>
   <meta charset="UTF-8">
@@ -11,283 +12,296 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="#home" class="w3-bar-item w3-button"><b>SaveTheAnimals</b></a>
+      <div class="w3-right w3-hide-small">
+        <a href="#projects" class="w3-bar-item w3-button">Protectoras</a>
+        <a href="#about" class="w3-bar-item w3-button">About</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contacto</a>
+        <a href="registro.php" class="w3-bar-item w3-button">Registrate</a>
+        <a href="login.php" class="w3-bar-item w3-button">Log in</a>
+      </div>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><b>SaveTheAnimals</b></a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#projects" class="w3-bar-item w3-button">Protectoras</a>
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-
-      <a href="registro.php" class="w3-bar-item w3-button">Registrate</a>
-      <a href="login.php" class="w3-bar-item w3-button">Log in</a>
     </div>
   </div>
-</div>
 
-<!-- Header -->
-<div class="container">
-  <h2>Carousel Example</h2>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+  <!-- Header -->
+  <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicadores -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
+      <!-- Slides -->
+      <div class="carousel-inner">
 
-      <div class="item active">
-        <img src="./imgs/protectora.jpg" alt="Tienda Animal" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>Tiendanimal</h3>
-          <p>Protectoras de Animales en Madrid</p>
+        <div class="item active">
+          <img src="./imgs/protectora.jpg" alt="Tienda Animal" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Tiendanimal</h3>
+            <p>Protectoras de Animales en Madrid</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="./imgs/Ayuso.jpg" alt="Ayuso" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Presidenta de Madrid</h3>
+            <p>A Ayuso también le preocupan los animales</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="./imgs/perretes.jpg" alt="Perretes" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Adoptar mejor que comprar</h3>
+            <p>La Comunidad de Madrid aprueba ayudas a protectoras de animales</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Movimiento carrusel-->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- Contenido de la página -->
+    <div class="w3-content w3-padding" style="max-width:1564px">
+
+      <!-- Protectoras-->
+      <div class="w3-container w3-padding-32" id="projects">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Protectoras</h3>
+      </div>
+
+      <div class="w3-row-padding">
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+            <img src="./imgs/perretes.jpg" alt="House" style="width:100%">
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+            <img src="./imgs/perretes.jpg" alt="House" style="width:100%">
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+            <img src="./imgs/perretes.jpg" alt="House" style="width:100%">
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+            <img src="./imgs/perretes.jpg" alt="House" style="width:100%">
+          </div>
         </div>
       </div>
 
-      <div class="item">
-        <img src="./imgs/Ayuso.jpg" alt="Ayuso" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>Presidenta de Madrid</h3>
-          <p>A Ayuso también le preocupan los animales</p>
+      <div class="w3-row-padding">
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+            <img src="./imgs/protectora.jpg" alt="House" style="width:99%">
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+            <img src="./imgs/protectora.jpg" alt="House" style="width:99%">
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+            <img src="./imgs/protectora.jpg" alt="House" style="width:99%">
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+            <img src="./imgs/protectora.jpg" alt="House" style="width:99%">
+          </div>
         </div>
       </div>
-    
-      <div class="item">
-        <img src="./imgs/perretes.jpg" alt="Perretes" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>Adoptar mejor que comprar</h3>
-          <p>La Comunidad de Madrid aprueba ayudas a protectoras de animales</p>
+      <br></br>
+
+      <div class="contenedor">
+
+        <div class="image2">
+          <a href="http://www.spap.net/"><img src="imgs/SPAP.png" height="100px"></a>
+        </div>
+        <div class="text">
+          <p>SPAP, la sociedad protectora de animales y plantas, una de las asociaciones de protección animal más
+            antiguas de Madrid. Desde 1928 trabajan por la salud, el cuidado y el bienestar de los animales. Rescatan
+            animales que han sufrido maltrato y/o abandono.
+            Trabajando para que se endurezcan y se mejoren las leyes de protección animal. También asesoran en todo tipo
+            de situaciones en las que hay animales involucrados, como por ejemplo deshaucios."El albergue de la SPAP es
+            uno de los más modernos en España. Las naves están protegidas del frío y del calor por una cubierta doble
+            con aislamiento
+            intermedio y con un murete cortavientos en sentido longitudinal en el interior.Somos una clínica veterinaria
+            no subvencionada dedicada a trabajar en beneficio de la salud, cuidado y bienestar de los animales,
+            ofreciendo servicios de calidad." </p>
         </div>
       </div>
-  
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-
-<!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
-
-  <!-- Protectoras Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Protectoras</h3>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="./imgs/perretes.jpg" alt="House" style="width:100%">
+      <br></br>
+      <div class="contenedor">
+        <div class="image2">
+          <a href="https://nuevavida-adopciones.org"><img src="imgs/NUEVAVIDA.jfif" height="100px"></a>
+        </div>
+        <div class="text">
+          <p>Nuestra andadura comenzó a principios de 2008 con la ilusión y el ánimo de varias personas deseosas por
+            salvar algunos animales de varias perreras. Empezamos difundiéndolos con el fin de encontrar familias que
+            los quisieran adoptar. Más adelante, emprendimos otro proyecto: conseguimos reunir en un chalet varios
+            perros que iban a ser sacrificados, y es aquí donde se puede decir que empezó la trayectoria de
+            NUEVAVIDA.Esta situación se mantuvo durante un tiempo pero, las posibilidades personales de tiempo hicieron
+            inviable su mantenimiento por lo que retomamos nuestro camino, y recondujimos nuestra actividad de una
+            manera más acorde a nuestras limitaciones. </p>
+        </div>
       </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="./imgs/perretes.jpg" alt="House" style="width:100%">
+      <br></br>
+      <div class="contenedor">
+        <div class="image2">
+          <a href="https://abrazoanimal.org"><img src="./imgs/AbrazoAnimal.jpg" height="100px"></a>
+        </div>
+        <div class="text">
+          <p>La Asociación Abrazo Animal gestiona el Centro Municipal de Protección Animal de Las Rozas de Madrid, dando
+            cumplimiento a la Ley 4/2016.Somos una entidad sin ánimo de lucro que se constituyó en 2014, como respuesta
+            al elevado número de animales que necesitan una protección real en nuestro país. Somos una protectora de
+            animales nacida con una marcada vocación social.Contra el abandono y el maltrato, difundiendo nuestro
+            mensaje de respetohacia los animales. Contamos con un equipo de veterinarias expertas y unas instalacione
+            idóneas para atender a nuestros animales </p>
+        </div>
       </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="./imgs/perretes.jpg" alt="House" style="width:100%">
+
+
+      <!-- About -->
+      <div id="about">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+        <p>Save the animals es un proyecto creado por un grupo de estudiantes de ingeniería informática de la
+          universidad Francisco de Vitoria.
+          Este proyecto consiste en una página web que permita de manera sencilla y cómoda obtener información sobre
+          diferentes protectoras de la comunidad de Madrid sin tener que ir físicamente a estas.
+        </p>
+        <p>
+          La página se divide en tres secciones, la página principal, la página de protectoras, y la página de FAQ. La
+          página principal consta de un carrusel de imágenes de animales y protectoras y una descripción del proyecto.
+          Además, todas las secciones constan de un navbar que nos redirige a las otras secciones y un footer que
+          contiene información sobre diversas redes sociales.
+
+          La página de protectoras consta de una pequeña descripción de cada protectora junto a su logo, así como la
+          ubicación de esta para facilitar la labor de aquellas personas interesadas en adoptar un animal. Si bien es
+          cierto que lo anteriormente mencionado es lo que ofrece esta página de protectoras en su futuro tendrá más
+          funciones.
+
+          Finalmente tenemos la página de FAQ, en la que podemos encontrar una presentación sobre el grupo de trabajo,
+          la manera en la que contactarnos y finalmente un formulario para las protectoras interesadas en el proyecto.
+
+        </p>
+        <p>
+          Este proyecto está todavía en desarrollo por lo que hay ciertas funciones que todavía no están implementadas
+          completamente. Dichas funciones consisten en una barra de búsqueda que servirá para filtrar por tamaño y
+          especie del animal para ahorrar tiempo al usuario, un desplegable que permita filtrar las protectoras por
+          zonas de la comunidad de Madrid y unas páginas más detalladas de las protectoras con las fichas de los
+          animales y división por especies.
+        </p>
+        <p>
+          Este proyecto ha sido creado con la intención de facilitar a las personas que estén interesadas en adoptar un
+          animal o que sencillamente no conocen lo suficiente al respecto y que por la complejidad que requiere no
+          lleguen a adoptar. Al facilitar este progreso, muchos animales conseguirán tener un hogar y poder vivir con
+          una familia.
+        </p>
       </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-        <img src="./imgs/perretes.jpg" alt="House" style="width:100%">
+
+
+
+
+      <!-- Contacto -->
+      <div id="contact">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contacto</h3>
+
+        <p>¿Tienes alguna pregunta o quieres hacer una donación para apoyar nuestra causa? ¡Nos encantaría escucharte!
+        </p>
+
+        <p><b>Email:</b> info@SaveTheAnimals.com</p>
+        <p><b>Teléfono:</b> 913 453 459</p>
+        <p><b>Horario:</b> L-V de 9:00 - 17:00</p>
+        <p><b>Dirección: </b></p>
+        <p>
+          Protectora de Animales SaveTheAnimals<br>
+          Avenida de Europa 125. Pozuelo de Alarcón<br>
+          28224, Madrid
+        </p>
+
+        <p>
+          <b>Síguenos en redes sociales:</b> ¡Nos encontrarás en Facebook, Twitter e Instagram!
+          <br>
+          Únete a la conversación y mantente al tanto de las últimas noticias y eventos (Puedes encontrarlos en la parte
+          baja de la pagina web).
+          <br>
+          Visita nuestra página de preguntas frecuentes: Haga clic aquí para acceder a nuestra página de preguntas
+          frecuentes y encontrar respuestas
+          a algunas de las preguntas más comunes.
+          <br>
+          Suscríbete a nuestro boletín informativo, añadalo en la sección de comentarios en el formulario para que lo
+          pueda ver.
+        </p>
+        <p>
+          <b>Conviértete en voluntario, adopta un animal o haz una donación</b>
+          </br>
+          ¿Te gustaría ayudarnos a proteger a los animales? ¿Estás interesado en adoptar un animal de nuestra
+          protectora? Menciónalo en la sección de
+          comentarios del formulario y le adjuntaremos la información necesaria.
+        </p>
+        <br>
+        <br>
+
+        <!-- Formulario -->
+        <h4>¿Desea trabajar con nosotros? Contáctenos.</h4>
+        <form>
+          <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name" style="width: 450px;">
+          <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email"
+            style="width: 450px;">
+          <input class="w3-input w3-section w3-border" type="text" placeholder="Asunto" required name="Subject"
+            style="width: 450px;">
+          <textarea class="w3-input w3-section w3-border" type="text" placeholder="Comentario" required name="Comment"
+            style="width: 450px; height: 150px;"></textarea>
+          <button class="w3-button w3-black w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> ENVIAR
+          </button>
+        </form>
       </div>
+
+      <!-- End page content -->
     </div>
   </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="./imgs/protectora.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="./imgs/protectora.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="./imgs/protectora.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-        <img src="./imgs/protectora.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-  </div>
-
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-    <p>Save the animals es un proyecto creado por un grupo de estudiantes de ingeniería informática de la universidad Francisco de Vitoria.
-      Este proyecto consiste en una página web que permita de manera sencilla y cómoda obtener información sobre diferentes protectoras de la comunidad de Madrid sin tener que ir físicamente a estas.
-    </p>
-    <p>
-      La página se divide en tres secciones, la página principal, la página de protectoras, y la página de FAQ. La página principal consta de un carrusel de imágenes de animales y protectoras y una descripción del proyecto. Además, todas las secciones constan de un navbar que nos redirige a las otras secciones y un footer que contiene información sobre diversas redes sociales.
-
-      La página de protectoras consta de una pequeña descripción de cada protectora junto a su logo, así como la ubicación de esta para facilitar la labor de aquellas personas interesadas en adoptar un animal. Si bien es cierto que lo anteriormente mencionado es lo que ofrece esta página de protectoras en su futuro tendrá más funciones.
-
-      Finalmente tenemos la página de FAQ, en la que podemos encontrar una presentación sobre el grupo de trabajo, la manera en la que contactarnos y finalmente un formulario para las protectoras interesadas en el proyecto.
-
-    </p>
-    <p>
-      Este proyecto está todavía en desarrollo por lo que hay ciertas funciones que todavía no están implementadas completamente. Dichas funciones consisten en una barra de búsqueda que servirá para filtrar por tamaño y especie del animal para ahorrar tiempo al usuario, un desplegable que permita filtrar las protectoras por zonas de la comunidad de Madrid y unas páginas más detalladas de las protectoras con las fichas de los animales y división por especies.
-    </p>
-    Este proyecto ha sido creado con la intención de facilitar a las personas que estén interesadas en adoptar un animal o que sencillamente no conocen lo suficiente al respecto y que por la complejidad que requiere no lleguen a adoptar. Al facilitar este progreso, muchos animales conseguirán tener un hogar y poder vivir con una familia.
-    <p>
-    </p>
-  </div>
-
-  <div class="container">
-    <div class="image">
-      <a href="https://nuevavida-adopciones.org"><img src="imgs/SPAP.png"  class="img" ></a>
-    </div>
-    <div class="image2">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.5033561470923!2d-3.719462184602652!3d40.46412797935963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229ba11811061%3A0xaf53bbed0d203b56!2sSociedad%20Protectora%20de%20Animales%20y%20Plantas%20(SPAP)!5e0!3m2!1ses!2ses!4v1672241368966!5m2!1ses!2ses" width="240" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="text">
-      <p>SPAP, la sociedad protectora de animeales y plantas, una de las asociaciones de protección animal más antiguas de Madrid. Desde 1928 trabajan por la salud, el cuidado y el bienestar de los animales. Rescatan animales que han sufrido maltrato y/o abandono.
-        Trabajando para que se endurezcan y se mejoren las leyes de protección animal. También asesoran en todo tipo de situaciones en las que hay animales involucrados, como por ejemplo deshaucios. </p>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="image">
-      <a href="https://nuevavida-adopciones.org"><img src="imgs/NUEVAVIDA.jfif" class="img"></a>
-    </div>
-    <div class="image2">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.1078322246613!2d-3.877403384602362!3d40.47287937935856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418671c6e49593%3A0x890a4338df372ed1!2sNUEVAVIDA-Adopciones-Direcci%C3%B3n%20de%20Apartado%20de%20Correos!5e0!3m2!1ses!2ses!4v1672242197554!5m2!1ses!2ses" width="240" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="text">
-      <p>Nuestra andadura comenzó a principios de 2008 con la ilusión y el ánimo de varias personas deseosas por salvar algunos animales de varias perreras. Empezamos difundiéndolos con el fin de encontrar familias que los quisieran adoptar. Más adelante, emprendimos otro proyecto: conseguimos reunir en un chalet varios perros que iban a ser sacrificados, y es aquí donde se puede decir que empezó la trayectoria de NUEVAVIDA.Esta situación se mantuvo durante un tiempo pero, las posibilidades personales de tiempo hicieron inviable su mantenimiento por lo que retomamos nuestro camino, y recondujimos nuestra actividad de una manera más acorde a nuestras limitaciones. </p>
-    </div>
-  </div>
-  <div class="container">
-    <div class="image">
-      <a href="https://abrazoanimal.org"><img src="imgs/AbrazoAnimal.jpg" class="img"></a>
-    </div>
-    <div class="image2">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.18096144704!2d-3.889532675335917!3d40.537590990174564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4182e793b8836d%3A0x4d8f13cb0599a21!2sAbrazo%20Animal!5e0!3m2!1ses!2ses!4v1672243027764!5m2!1ses!2ses" width="240" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="text">
-      <p>La Asociación Abrazo Animal gestiona el Centro Municipal de Protección Animal de Las Rozas de Madrid, dando cumplimiento a la Ley 4/2016.Somos una entidad sin ánimo de lucro que se constituyó en 2014, como respuesta al elevado número de animales que necesitan una protección real en nuestro país. Somos una protectora de animales nacida con una marcada vocación social.Contra el abandono y el maltrato, difundiendo nuestro mensaje de respetohacia los animales. </p>
-    </div>
-  </div>
-
-
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-      <h3>John Doe</h3>
-      <p class="w3-opacity">CEO & Founder</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-      <h3>Jane Doe</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-      <h3>Mike Ross</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-      <h3>Dan Star</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-  </div>
-
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contacto</h3>
-    <p>¿Tienes alguna pregunta o quieres hacer una donación para apoyar nuestra causa? ¡Nos encantaría escuchar de ti! Puedes contactarnos de las siguientes maneras:
-
-      llena nuestro formulario de contacto en línea:se encuentra en la siguiente seccion.<br>
-
-      Envíanos un correo electrónico: escríbenos a info@SaveTheAnimals.com.<br>
-
-      Llámanos: Nuestro número de teléfono es 913 453 459. Estamos disponibles de lunes a viernes de 9:00 a.m. a 5:00 p.m.<br>
-
-      Escríbenos por correo: Nuestra dirección postal es:
-      Sobreprotectora de Animales SaveTheAnimals
-      123 Main Street
-      Madrid, España 28078
-
-      <br>Síguenos en redes sociales: ¡Nos encontrarás en Facebook, Twitter e Instagram! Únete a la conversación y mantente al tanto de las últimas noticias y eventos.(Puedes encontrarlos en la parte baja de la pagina web.)<br>
-
-      Visita nuestra página de preguntas frecuentes: Haga clic aquí para acceder a nuestra página de preguntas frecuentes y encontrar respuestas a algunas de las preguntas más comunes.<br>
-
-      Suscríbete a nuestro boletín informativo, añadalo en la seccion de comentarios en el formulario para que lo pueda ver.<br>
-
-      Conviértete en voluntario: ¿Te gustaría ayudarnos a proteger a los animales? añadalo en la seccion de comentarios en el formulario para que lo pueda ver.<br>
-
-      Adopta un animal: Si estás interesado en adoptar un animal de nuestra protectora, añadalo en la seccion de comentarios en el formulario para que lo pueda ver y le proporcionaremos mas informacion.<br>
-
-      Haz una donación: Nuestra organización depende de las donaciones para poder seguir protegiendo a los animales. Mencionalo en la seccion de comentarios y le adjuntaremos informacion sobre como donar.
-      <br><br></p>
-
-    <!-- Formulario -->
-    <h4>Desea trabajar con nosotros? Contáctenos.</h4>
-    <form>
-      <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name" style="width: 450px;">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email" style="width: 450px;">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Asunto" required name="Subject" style="width: 450px;">
-      <textarea class="w3-input w3-section w3-border" type="text" placeholder="Comentario" required name="Comment" style="width: 450px; height: 150px;"></textarea>
-      <button class="w3-button w3-black w3-section" type="submit">
-        <i class="fa fa-paper-plane"></i> ENVIAR
-      </button>
-    </form>
-  </div>
-  
-<!-- End page content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-  <p>Save The Animals</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-</footer>
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-16">
+    <p>Save The Animals</p>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </footer>
 
 </body>
+
 </html>
